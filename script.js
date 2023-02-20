@@ -96,8 +96,6 @@
 
 // console.log(typeof (anwers));
 
-
-
 // const category = "toys";
 
 // console.log(`html://someurl.com/${category}`);
@@ -105,31 +103,46 @@
 // const user = "Vova";
 // alert(`How are you name? ${user}`);
 
-
-
 //.....................
-
 
 // console.log('arr' + " - object");
 // console.log(4 + +"5");
 
+// let incr = 10,
+//     decr = 10;
 
-let incr = 10,
-    decr = 10;
+//     // ++incr;
+//     // --decr;
 
-    // ++incr;
-    // --decr;
+// console.log(++incr);
+// console.log(--decr);
 
-console.log(++incr);
-console.log(--decr);
+// console.log(5%2);
+
+// console.log(2 + 2 * 2 !== '6');
+
+// const isCheked = false
+//     isClose = false
+
+//     console.log(isCheked || !isClose);
+
+const numberOfFilms = +prompt("Сколько фильмов вы посмотрели?", '');
 
 
-console.log(5%2);
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false,
+};
 
-console.log(2 + 2 * 2 !== '6');
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
 
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-const isCheked = false
-    isClose = false
-
-    console.log(isCheked || !isClose);
+console.log(personalMovieDB);
